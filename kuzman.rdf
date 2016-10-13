@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#"
+     xml:base="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_mkuzman"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#druziSe -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#druziSe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#jeProtivnik -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#jeProtivnik"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaPokemona -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaPokemona">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaPokemona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaTrenera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaTrenera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaPokemona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#ziviUPrirodi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#ziviUPrirodi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaGodina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#imaGodina">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#ZIVOTINJA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#ZIVOTINJA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#ZIVOTINJA"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Bulbasaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Bulbasaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <druziSe rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Charmander"/>
+        <jeProtivnik rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Pikachu"/>
+        <ziviUPrirodi rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Suma"/>
+        <imaTrenera rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Zvonimir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Charmander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Charmander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#POKEMON"/>
+        <imaGodina rdf:datatype="&xsd;integer">3</imaGodina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Pustinja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Pustinja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Sara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Sara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#TRENER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Savana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Savana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Suma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Suma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#PRIRODA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Zvonimir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2015/11/moja_ontologija_moja_ontologija_mkuzman#Zvonimir"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
